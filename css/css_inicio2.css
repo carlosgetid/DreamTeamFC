@@ -1,0 +1,513 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+	box-sizing: border-box;
+}
+
+body{
+	margin-bottom: 20px;
+	margin-top: 20px;
+	background: url(../imagenes/bg-soccer-2.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#contenedor{
+	width: 95%;
+	margin:auto;
+}
+
+main{
+	display: flex;
+}
+
+header{
+	width: 100%;
+	height: 20%;
+	background: #13AA40;
+}
+
+.menu{
+	width: 100%;
+	height: 50px;
+	display: flex;
+	perspective: 200px;
+}
+
+.menu ul{
+	display: flex;
+	margin: auto;
+}
+.menu li{
+	list-style: none;
+	padding: 15px 20px;
+}
+
+.menu li:hover{
+	background: rgba(0,0,0,0.3);
+	color: white;
+	cursor: pointer;
+	transition: all 300ms;
+}
+
+.menu ul li ul{
+	flex-direction: column;
+	position: absolute;
+	background: #58B813;
+	margin-top: 15px;
+	transform: rotateY(240deg) scale(0);
+	transition: all 1s;
+	box-shadow: 1px 1px 10px 0px black;
+}
+
+.menu ul li:hover > ul{
+	transform: rotateY(0deg) scale(1);
+	transition: all 1s;
+}
+
+.menu ul li ul:before{
+	content: '';
+	width: 0;
+	height: 0;
+	border-right: 10px solid transparent;
+	border-left: 10px solid transparent;
+	border-bottom: 8px solid #58B813;
+	position: absolute;
+	margin-top: -8px;
+	margin-left: 20px;
+}
+
+.menu ul li a {
+	color:white;
+	text-decoration: none;
+
+}
+
+#subtitulo {
+    height: 80px;
+    background: #13bf31;
+    width: 100%;
+}
+
+#cs-subtitulo {
+    font-size: 30px;
+    padding-left: 30px;
+    color: white;
+    padding-top: 20px;
+}
+
+aside.color{
+	background-color: lightgreen;
+}
+aside{
+	width: 20%;
+}
+aside.buscatalentos {
+	width: 40%;
+	padding: 15px;
+}
+
+aside.buscatalentos p {
+	text-align: justify;
+	color: #2d2d2d;
+}
+
+aside img.im{
+	margin-left: 5px;
+	margin-top: 10px;
+	margin-right: 5px;
+	width: 220px;
+	height: 200px;
+}
+
+aside img.class2{
+	margin-left: 5px;
+	margin-top: 12px;
+	margin-right: 5px;
+	width: 200px;
+	height: 230px;
+}
+
+aside table{
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+aside h1{
+	margin-top: 20px;
+	text-align: center;
+	color: #0e8e34;
+}
+
+aside p{
+	font-size:20px;
+	margin-top: 5px;
+	text-align: center;
+
+}
+
+aside img{
+	width: 120px;
+	height: 120px;
+	margin-top: 5px;
+}
+
+
+#tg{
+	border-radius: 200px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+section{
+	width: 80%;
+}
+
+section.futbol{
+	width: 100%;
+	padding: 5px;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: rgba(256,256,256,0.9);
+}
+
+section.futbol figure {
+	width: 30%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 30px;
+	border: 2px solid #13bf31;
+}
+
+section.futbol figure img {
+	width: 80%;
+	margin: 10px auto;
+	display: block;
+}
+section.futbol figure figcaption {
+	margin: 10px;
+	text-align: center;
+	color: #13bf31;
+	font-weight: 700;
+}
+
+footer p{
+	font-size: 18px;
+	margin-top: 30px;
+	margin-right: 260px;
+	margin-left: 250px;
+	color: white;
+}
+
+footer img{
+	margin-top: 20px;	
+	width:50px;
+	height:50px;
+	padding-right: 5px;	
+	padding-bottom: 10px;
+}
+
+footer{
+	background-color: black;
+	display: flex;
+	flex-direction: row;
+}
+
+article p{
+	font-size: 20px;
+	margin-top: 20px;
+	margin-left: 5px;
+    color: #2d2d2d;
+	text-align: justify;
+	padding-right: 20px;
+}
+
+article img{
+	width: 300px;
+	height: 200px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 10px;
+    margin-bottom: 20px;	
+}
+
+article a{
+	font-size: 24px;
+	text-decoration: none;
+	color: #13AA40;
+	font-weight: 700;
+}
+
+
+section.cl1{
+	display: flex;
+	flex-direction: row;
+}
+
+section.cl2{
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+}
+
+section.cl3{
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(256,256,256,0.9);
+}
+
+section{
+	width: 100%;
+}
+
+article video{
+	margin-left: 80px;
+	margin-bottom: 10px;
+}
+
+article h1{
+	margin-top: 5px;
+	color: #13AA40;
+	font-size: 35px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+}
+
+article.institucional-article {
+	margin: 0 20px;
+}
+
+article.institucional-article  p,
+article.patrocinadores-article  p{
+	text-align: justify;
+	color: #2d2d2d;
+}
+
+video.institucional-video {
+	margin: 3em 0;
+	width: 480px;
+}
+
+.representantes-p {
+	color: #085e21;
+}
+
+.patrocinadores-img {
+	width: 250px;
+	height: 150px;
+	margin: 10px 10px 20px 10px;
+}
+
+section.cl article img.academia-img {
+	width: 350px;
+	height: 200px;
+	margin: 10px 10px 20px 10px;
+}
+
+section.cl article {
+	float: left;
+	width: 50%;
+	margin: 1em auto;
+}
+
+section.cl article.academia-contacto {
+	width: 100%;
+}
+
+article.categoria-article {
+	margin-bottom: 1em;
+}
+
+section.cl3 article.categoria-article div {
+	width: 50%;
+	float: left;
+	margin: 2em 2em 0;
+}
+
+section.cl3 article.categoria-article img {
+	margin: 2em auto;
+}
+
+article.buscatalentos-article {
+	padding-top: 1em;
+}
+
+article.sedes-article div {
+	width: 40%;
+	float: left;
+	margin: 2em 2em 0;
+}
+
+p.p1 {
+	margin: 0 0 0 15px;
+    color: #0e8e34;
+    font-weight: 700;
+    text-align: center;
+}
+
+p.p2 {
+	margin: 0 0 0 15px;
+	text-align: center;
+}
+
+h2 {
+	color: #0e8e34;
+}
+
+.form-register{
+	width: 500px;
+	border-radius: 7px;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contenedor-inputs{
+	padding:  10px 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+}
+
+.input-48{
+	width: 48%;
+}
+
+.input-100{
+	width: 100%;
+}
+input{
+	margin-bottom: 15px;
+	padding: 15px;
+	font-size: 16px;
+	border-radius: 3px;
+	border: 1px solid #13bf31;
+}
+
+.btn-enviar{
+	background: #13bf31;
+	color: #fff;
+	margin: auto;
+	cursor: pointer;
+	width: 50%;
+	font-size: 1em;
+	padding: 10px;
+}
+
+.input-10{
+	margin-bottom: 15px;
+	padding: 34px;
+	font-size: 16px;
+	border-radius: 3px;
+	border: 1px solid #13bf31;
+	width: 100%;
+}
+
+ul.contacto-ul {
+	list-style: none;
+        cursor: pointer;
+}
+
+ul.contacto-ul li {
+	float: left;
+	padding: 1.5em 6em;
+	background-color: #13AA40;
+	border: 2px solid white;
+}
+
+.contacto-active {
+	background-color: #13bf31 !important;
+}
+
+div.contacto {
+	display: flex;
+	justify-content: center;
+	color: white;
+	font-weight: 700;
+}
+
+#contacto-show p {
+	text-align: center;
+}
+
+.contacto-iframe {
+	width: 700px;
+	height: 600px;
+}
+
+#comas-active,
+#losolivos-active,
+#magdalena-active {
+	display: none;
+}
+
+.active {
+	display: block !important;
+}
+
+ol {
+	padding: 10px;
+}
+
+iframe {
+	padding: 2em 0;
+}
+
+.contenedor-galeria{
+	padding: 3em 1.5em;
+}
+
+div.galeria-img {
+	width: 350px;
+	height: 250px;
+	float: left;
+	margin: 2px;
+	background-size: 150% 120%;
+	background-position: center;
+}
+
+.img1{
+	background-image: url(../imagenes/galeria/galeria-1.jpg);
+}
+
+.img2{
+	background-image: url(../imagenes/galeria/galeria-2.jpg);
+}
+
+.img3{
+	background-image: url(../imagenes/galeria/galeria-3.jpg);
+}
+
+.img4{
+	background-image: url(../imagenes/galeria/galeria-4.jpg);
+}
+
+.img5{
+	background-image: url(../imagenes/galeria/galeria-5.jpg);
+}
+
+.img6{
+	background-image: url(../imagenes/galeria/galeria-6.jpg);
+
+}
+.img7{
+	background-image: url(../imagenes/galeria/galeria-7.jpg);
+}
+.img8{
+	background-image: url(../imagenes/galeria/galeria-8.jpg);
+}
+.img9{
+	background-image: url(../imagenes/galeria/galeria-9.jpg);
+}
+
+@media only screen and (max-width: 1280px) {
+	div.galeria-img {
+		width: 300px;
+		height: 200px;
+  }
+}
